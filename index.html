@@ -1,98 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Salil</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="profile">
-          <img src="image.jpg" alt="Your Name">
-          <div class="profile-info">
-            <h1>Your Name</h1>
-            <p>Applying to Canada colleges for MS</p>
-            <ul class="contact-info">
-              <li>Phone no.: 123-456-7890</li>
-              <li>Email: yourname@example.com</li>
-              <li>LinkedIn: <a href="https://www.linkedin.com/in/yourname/">yourname</a></li>
-              <li>Github: <a href="https://github.com/yourname">yourname</a></li>
-              <li>Address: 123 Main St, Anytown, USA</li>
-            </ul>
-          </div>
+    <div class="container">
+      <div class="left-half">
+        <div class="info">
+          <p class="name">YOUR NAME</p>
+          Applying to Canada colleges for MS<br />
+          Phone no.: 123-456-7890<br />
+          Email: <a href="mailto:yourname@example.com">yourname@example.com</a
+          ><br />
+          LinkedIn: <a href="https://www.linkedin.com/in/yourname/">yourname</a
+          ><br />
+          Github: <a href="https://github.com/yourname">yourname</a><br />
+          Address: 123 Main St, Anytown, USA
         </div>
       </div>
-    </header>
-    
-    <main>
-    <br>
-      <div class="container">
-        <section id="about">
-          <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lectus euismod, bibendum velit sit amet, aliquet enim. Nullam imperdiet erat eget arcu elementum, id bibendum turpis malesuada.</p>
-        </section>
-        
-        <section id="education">
-          <h2>Education Background</h2>
-          <ul>
-            <li>Bachelor's degree in Computer Science, XYZ University, 2019-2023</li>
-            <li>High School Diploma, ABC School, 2015-2019</li>
-          </ul>
-        </section>
-        
-        <section id="work">
-          <h2>Work Experience</h2>
-          <ul>
-            <li>Software Developer Intern, XYZ Company, Summer 2022</li>
-            <li>Web Developer Intern, ABC Company, Summer 2021</li>
-          </ul>
-        </section>
-        
-        <section id="skills">
-          <h2>Skills and Abilities</h2>
-          <ul>
-            <li>Programming languages: Java, Python, JavaScript</li>
-            <li>Web development frameworks: React, Angular</li>
-            <li>Database systems: MySQL, MongoDB</li>
-          </ul>
-        </section>
-        
-        <section id="achievements">
-          <h2>Achievements and Awards</h2>
-          <ul>
-            <li>Dean's List, XYZ University, Fall 2019</li>
-            <li>Best Hackathon Project, ABC Hackathon, Spring 2021</li>
-          </ul>
-        </section>
-        
-        <section id="personal">
-          <h2>Personal Statement</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lectus euismod, bibendum velit sit amet, aliquet enim. Nullam imperdiet erat eget arcu elementum, id bibendum turpis malesuada.</p>
-        </section>
-        
-        <section id="references">
-          <h2>References</h2>
-          <ul>
-            <li>John Doe, Professor of Computer Science, XYZ University</li>
-            <li>Jane Smith, Manager, ABC Company</li>
-         
-
-          </ul>
-        </section>
+      <div class="right-half"></div>
+      <div class="filter"></div>
+    </div>
+    <div id="glass" class=""></div>
+    <div class="content">
+      <div class="navbar">
+        <div class="navbar-item" onclick="changeContent(1) ;scrollToBottom()">
+          About
+        </div>
+        <div class="navbar-item" onclick="changeContent(2) ;scrollToBottom()">
+          Education
+        </div>
+        <div class="navbar-item" onclick="changeContent(3) ;scrollToBottom()">
+          Work
+        </div>
+        <div class="navbar-item" onclick="changeContent(4) ;scrollToBottom()">
+          Skills
+        </div>
+        <div class="navbar-item" onclick="changeContent(5) ;scrollToBottom()">
+          Achievements
+        </div>
+        <div class="navbar-item" onclick="changeContent(6) ;scrollToBottom()">
+          Personal
+        </div>
+        <div class="navbar-item" onclick="changeContent(7) ;scrollToBottom()">
+          References
+        </div>
       </div>
-    </main>
-    
-    <!-- <script src="index.js"></script> -->
-    <script>
-      const sections = document.querySelectorAll('section');
+      <div id="description">Click above to see more!</div>
+    </div>
+    <div class="footer"></div>
 
-      sections.forEach(section => {
-        const header = section.querySelector('h2');
-        header.addEventListener('click', () => {
-          section.classList.toggle('open');
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

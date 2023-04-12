@@ -1,0 +1,163 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: auto;
+  overflow: auto;
+}
+
+.left-half {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #282828;
+}
+
+.right-half {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-image: url("./profile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ccc;
+}
+
+.content {
+  margin-bottom: 720px;
+  position: relative;
+  z-index: 9999;
+  top: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  min-height: 400px;
+  max-height: 800px;
+  overflow: auto;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0px 0px 18px 11px rgba(0, 0, 0, 0.25);
+}
+
+.filter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #282828;
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+}
+
+.info {
+  position: fixed;
+  color: #f0f0f0;
+  margin-top: 180px;
+  margin-left: 160px;
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+}
+.info a {
+  color: #007bff; /* Replace with your desired link color */
+  text-decoration: none;
+}
+.info a:hover {
+  text-decoration: underline;
+}
+
+.name {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.footer {
+  position: fixed;
+  height: 100px;
+  width: 100vw;
+}
+
+.navbar {
+  padding-top: 7px;
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.navbar-item {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #818181;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.navbar-item:hover,
+.navbar-item.active {
+  color: #282828;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #282828;
+}
+
+#description {
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80%;
+  min-height: 300px;
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.frosted-glass {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(48, 48, 48, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.icons {
+  height: 18px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 20px;
+  width: auto;
+  height: auto;
+  line-height: 2.5;
+  text-align: left;
+}
